@@ -10,8 +10,7 @@ public class LongestSequence {
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					System.in));
-			System.out
-					.println("Enter rows & columns of the matrix (seperated by space): ");
+			System.out.println("Enter rows & columns of the matrix (seperated by space): ");
 			String rowCol = br.readLine();
 			if (rowCol.split(" ").length > 2 || rowCol.split(" ").length < 2
 					|| rowCol.split(" ").length <= 0) {
@@ -21,8 +20,7 @@ public class LongestSequence {
 			int row = Integer.valueOf(rowCol.split(" ")[0].trim());
 			int col = Integer.valueOf(rowCol.split(" ")[1].trim());
 			int[][] grid = new int[row][col];
-			System.out
-					.println("Enter values of the matrix (from left to right, top to bottom & seperated by spaces): ");
+			System.out.println("Enter values of the matrix (from left to right, top to bottom & seperated by spaces): ");
 			String value = br.readLine();
 			String[] values = value.split(" ");
 			if (values.length < row * col || values.length > row * col
